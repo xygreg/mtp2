@@ -16,7 +16,7 @@
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <nav class="bg-light fixed-top navbar navbar-expand-lg navbar-light"> 
             <div class="container-fluid"> <a class="navbar-brand" href="#"><img src="assets/img/logo1.png" alt="Logo-ul Companiei Artizan Prăjituri" width="235" height="52"></a> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler8" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> <span class="toggler-line"></span> <span class="toggler-line"></span> <span class="toggler-line"></span> </span>
                 </button>                 
@@ -118,27 +118,58 @@
                 <div class="container"> 
                     <div class="row"> 
                         <div class="col-md-4 mb-4"> 
-                            <div class="produs">
+                            <div class="produs d-flex flex-column">
                                 <img src="assets/img/galerie_tort_cu_fructe_600c.png" alt="Un tort delicios cu blat de ciocolată și cremă bogată, decorat cu fructe proaspete." class="img-fluid"> 
-                                <h4 class="gradient-text2 my-2 text-center">Tort cu ciocolată și fructe</h4>
+                                <div class="produs-titlu"> 
+                                    <h4 class="flex-grow-1 gradient-text2 my-2 text-center">Tort cu ciocolată și fructe</h4> 
+                                </div>
                             </div>                             
                         </div>                         
                         <div class="col-md-4 mb-4"> 
                             <div class="produs">
                                 <img src="assets/img/galerie_cheescake_fructe_600c.png" alt="Un cheesecake cremos și delicios cu fructe de pădure, pentru iubitorii de deserturi cu brânză." class="img-fluid"> 
-                                <h4 class="gradient-text2 my-2 text-center">Cheesecake cu fructe de pădure</h4> 
+                                <div class="produs-titlu"> 
+                                    <h4 class="flex-grow-1 gradient-text2 my-2 text-center">Cheesecake cu fructe de pădure</h4> 
+                                </div>
                             </div>
                         </div>                         
                         <div class="col-md-4 mb-4"> 
                             <div class="produs">
                                 <img src="assets/img/galerie_cupcake_vanilie_600c.png" alt="Cupcakes pufoase și delicioase cu aromă de vanilie, acoperite cu o cremă generoasă de ciocolată." class="img-fluid"> 
-                                <h4 class="gradient-text2 my-2 text-center">Cupcakes cu vanilie și ciocolată</h4> 
+                                <div class="produs-titlu"> 
+                                    <h4 class="flex-grow-1 gradient-text2 my-2 text-center">Cupcakes cu vanilie și ciocolată</h4> 
+                                </div>                                 
                             </div>
                         </div>                         
                     </div>                     
                     <!-- Adaugă mai multe rânduri și coloane pentru a adăuga mai multe imagini -->                     
                     <div class="col despre-noi-content mb-3">
                         <a href="galerie.html" class="btn btn-primary mt-0">Afla mai multe</a>
+                    </div>                     
+                </div>                 
+            </section>
+            <section id="testimoniale" class="my-5"> 
+                <h2 class="ms-3 my-5 text-left titlu-sectiune">Testimoniale</h2> 
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="col-md-4"> 
+                            <div class="testimonial-box"> 
+                                <h5 class="testimonial-name gradient-text2">- Ioana D.</h5> 
+                                <p class="testimonial-text text-sectiune">"Am comandat un tort de ciocolată pentru petrecerea mea și a fost absolut delicios! Mulțumesc, Armine Fait Maison!"</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4"> 
+                            <div class="testimonial-box"> 
+                                <h5 class="testimonial-name gradient-text2">- Mihai P.</h5> 
+                                <p class="testimonial-text text-sectiune">"Cupcakes-urile cu vanilie și ciocolată sunt cele mai bune pe care le-am gustat vreodată. Le recomand tuturor!"</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4"> 
+                            <div class="testimonial-box"> 
+                                <h5 class="testimonial-name gradient-text2">- Gabriela V.</h5> 
+                                <p class="testimonial-text text-sectiune">"Am participat la un atelier de gătit și am învățat să fac deserturi delicioase. A fost o experiență minunată!"</p> 
+                            </div>                             
+                        </div>                         
                     </div>                     
                 </div>                 
             </section>
@@ -185,6 +216,7 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="assets/js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="navbar-scroll.js"></script>
         <script src="pgia/lib/pgia.js"></script>
     </body>
 </html>
