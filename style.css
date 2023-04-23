@@ -1,5 +1,18 @@
 body {
     padding-top: 78px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    transform: translateY(-100%);
+
+    /* transition: transform 0.3s; */
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .hidden {
+    display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar .nav-item .nav-link {
@@ -11,7 +24,31 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    transition: all 0.3s;
+    min-height: 20px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-image: linear-gradient(to right, #f80, #f06, #f80);
+    font-size: 1.4rem;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #f80;
+    box-shadow: 0 0 2px 1px rgba(240, 22, 22, 0.5) inset;
+    border-radius: 4px;
+}
+
+.navbar .nav-item.active .nav-link:hover {
+    background-image: linear-gradient(to right, #f06, #f80);
+    box-shadow: 0 0 2px 1px rgba(240, 22, 22, 0.5) inset;
+    border-radius: 4px;
+    font-size: 1.2rem;
 }
 
 .navbar-toggler {
@@ -36,7 +73,7 @@ body {
     margin-top: 0px;
 }
 
-/* gradient text */
+/* gradient text 
 .gradient-text {
     background-image: linear-gradient(to right, #f06, #f80);
     -webkit-background-clip: text;
@@ -45,8 +82,7 @@ body {
     color: transparent;
     text-decoration: none;
     justify-content: center;
-}
-
+} */
 .navbar-nav {
     display: flex;
     justify-content: center;
@@ -74,14 +110,15 @@ body {
     text-align: center;
 }
 
-/* Despre noi index */
-/* Despre Noi */
-#despre-noi {
-    font-family: 'Roboto', sans-serif;
+/* Formatari texte #servicii p, */
+.titlu-sectiune {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #882E4F;
 }
 
-#despre-noi p,
-#servicii p,
 .text-sectiune {
     font-size: 1.1rem;
     font-weight: 400;
@@ -90,9 +127,18 @@ body {
     color: #5B2344;
 }
 
-#despre-noi .btn-primary,
-#servicii .btn-primary,
-#galerie .btn-primary {
+.gradient-text2 {
+    font-weight: bold;
+    background-image: linear-gradient(to right,  #fbb034, #fa2509);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Formatare buton primary */
+.btn-primary {
     border: none;
     border-radius: 12px;
     color: #fff;
@@ -103,30 +149,20 @@ body {
     background-image: linear-gradient(45deg, #882E4F, #5B2344);
 }
 
-#despre-noi .btn-primary:hover,
-#servicii .btn-primary:hover,
-#galerie .btn-primary:hover {
+.btn-primary:hover {
     background-image: linear-gradient(45deg, #5B2344, #882E4F);
     transform: translateY(-3px);
 }
 
-#despre-noi .btn-primary:active,
-#servicii .btn-primary:active,
-#galerie .btn-primary:active {
+.btn-primary:active {
     transform: translateY(1px);
 }
 
-/* centrare buton despre-noi */
+/* centrare buton despre-noi index */
 .despre-noi-content {
     display: flex;
-
-    /* Adaugă display flex */
     flex-direction: column;
-
-    /* Oricare copil al acestei clase va fi organizat pe coloana */
     align-items: center;
-
-    /* Centreaza elementele copil pe orizontala */
 }
 
 /* ****************** Servicii ***************************** */
@@ -144,18 +180,14 @@ body {
     color: #fbb034;
 }
 
-.service-title {
-    /* background-image: linear-gradient(to left, #56ab2f, #a8e063);
-    background-image: linear-gradient(to left, #ff5e62, #ff9966, #00f260, #0575e6, #021b79); */
-    /* background-image: linear-gradient(to left, #ff5e62, #ff9966, #ffceab); */
+/* .service-title {
     background-image: linear-gradient(to right, #fbb034, #FFDD00);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
+} */
 /* *************  GALERIE ****************** */
 #galerie {
     padding: 0px 0;
@@ -202,8 +234,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     background-color: #f7f7f7;
-
-    /* culoarea de fundal a testimonialului */
     padding: 10px;
     text-align: center;
     margin-bottom: 5px;
@@ -228,7 +258,7 @@ footer {
     background-color: #5c1936;
 }
 
-#footerArmine .text-footer {
+.footer-text {
     color: #c57693;
 
     /* #aa978a; */
@@ -238,27 +268,21 @@ footer {
     transition: all 0.3s;
 }
 
-#footerArmine .text-footer:hover {
+.footer-text:hover {
     color: #f34207;
-
-    /* #FFE3C3; */
     text-decoration: none;
 }
 
-#footerArmine .text-footer-small {
+.footer-text-small {
     color: #F8E1D1;
     font-size: 0.875rem;
 }
 
-#footerArmine .gradient-text {
-    /* background-image: linear-gradient(to right, #882E4F, #d61b2b, #882E4F);
-  /* #882E4F, #E74856, #882E4F); */
+.footer-titlu {
     -webkit-background-clip: text;
     font-weight: bold;
     height: 3rem;
     color: #f96363;
-
-    /* transparent; */
     background-clip: text;
 
     /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); */
@@ -279,30 +303,11 @@ footer {
     color: #E74856;
 }
 
+/* pentru icoanele de fb twitter etc */
 .list-inline-item {
     padding: 0 10px;
-
-    /* pentru icoanele de fb twitter etc */
 }
 
-/* .img-fluid {
-    width: 100%;
-    height: auto;
-} */
-.gradient-text2 {
-    font-weight: bold;
-    background-image: linear-gradient(to right,  #fbb034, #fa2509);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
 
-.titlu-sectiune {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    color: #882E4F;
-}
+
+
