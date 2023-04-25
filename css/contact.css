@@ -1,0 +1,89 @@
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 0rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.contact-item strong {
+    font-weight: 600;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+/* orar - box */
+.contact-item .orar-box {
+    margin: 0 auto;
+}
+
+.orar-box {
+    border: 2px solid rgb(228, 111, 65);
+
+    /* Grosimea și culoarea chenarului */
+    border-radius: 5px;
+
+    /* Rotunjimea colțurilor chenarului */
+    padding: 1rem;
+
+    /* Spațiul dintre text și chenar */
+    background-color: #f8f9fa;
+
+    /* Culoarea de fundal a chenarului */
+    display: inline-block;
+    text-align: left;
+}
+
+.orar-box p {
+    margin-bottom: 0rem;
+
+    /* Ajustați spațiul dintre paragrafe */
+    font-size: 0.8rem;
+}
+
+.map-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 0.5rem;
+    margin: 0 auto;
+    max-width: 85%;
+}
+

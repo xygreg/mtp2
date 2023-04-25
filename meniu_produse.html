@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Armine - Fait Maison - Artizan patisier</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- fonturi awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="css/meniu_produse.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Meniul de navigare (Navbar) -->
+        <div id="nav-container">
+            <nav class="bg-light fixed-top navbar navbar-expand-lg navbar-light"> 
+                <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img src="assets/img/logo1.png" alt="Logo-ul Companiei Artizan Prăjituri" width="235" height="52"></a> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler8" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> <span class="toggler-line"></span> <span class="toggler-line"></span> <span class="toggler-line"></span> </span>
+                    </button>                     
+                    <div class="collapse navbar-collapse" id="navbarToggler8"> 
+                        <ul class="mb-2 mb-lg-0 ms-auto navbar-nav"> 
+                            <li class="active nav-item">
+                                <a class="nav-link" href="index.html">Acasa</a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="despre-noi.html">Despre Noi</a> 
+                            </li>                             
+                            <li class="nav-item"><a class="nav-link" href="servicii.html">Servicii</a>
+                            </li>                             
+                            <li class="nav-item dropdown"><a class="nav-link" href="galerie.html">Galerie</a>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link" href="meniu_produse.html">Meniu</a>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link" href="contact.html">Contact</a>
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+            </nav>
+        </div>
+        <!-- END Meniul de navigare (Navbar) -->
+        <main>
+            <div class="container">
+                <h1 class="my-4 titlu-sectiune">Meniu produse</h1>
+                <table class="table table-striped">
+                    <thead class="text-sectiune">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Denumire produs</th>
+                            <th scope="col">Categorie</th>
+                            <th scope="col" data-toggle="tooltip" data-placement="top" title="Click pentru sortare" style="cursor: pointer; white-space: nowrap" id="sort-btn">Preț 
+                                <button class="btn btn-outline-secondary btn-xs sort-btn" id="sort-up-btn">
+                                    <i class="fa-caret-up fas"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-xs sort-btn" id="sort-down-btn">
+                                    <i class="fa-caret-down fas"></i>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="produse-tabel">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Prajitura cu ciocolată și nucă</td>
+                            <td>Prăjituri</td>
+                            <td data-price="15.50">15.50 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Prajitura cu fructe de pădure</td>
+                            <td>Prăjituri</td>
+                            <td data-price="16.00">16.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Prajitura cu fructe exotice</td>
+                            <td>Prăjituri</td>
+                            <td data-price="20.00">20.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Tort cu ciocolată și nucă de cocos</td>
+                            <td>Torturi</td>
+                            <td data-price="120.00">120.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Tort cu fructe și mascarpone</td>
+                            <td>Torturi</td>
+                            <td data-price="130.00">130.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Tort cu ciocolată și caramel</td>
+                            <td>Torturi</td>
+                            <td data-price="140.00">140.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Fursecuri cu ciocolată</td>
+                            <td>Fursecuri și biscuiți</td>
+                            <td data-price="5.00">5.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Biscuiți cu nucă</td>
+                            <td>Fursecuri și biscuiți</td>
+                            <td data-price="6.00">6.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Fursecuri cu fulgi de ovăz</td>
+                            <td>Fursecuri și biscuiți</td>
+                            <td data-price="4.00">4.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Pâine integrală</td>
+                            <td>Pâine și produse de panificație</td>
+                            <td data-price="7.00">7.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Pâine cu semințe</td>
+                            <td>Pâine și produse de panificație</td>
+                            <td data-price="8.00">8.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Bagheta</td>
+                            <td>Pâine și produse de panificație</td>
+                            <td data-price="3.50">3.50 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Plăcintă cu brânză</td>
+                            <td>Produse de patiserie sărate</td>
+                            <td data-price="9.00">9.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Plăcintă cu ciuperci</td>
+                            <td>Produse de patiserie sărate</td>
+                            <td data-price="10.00">10.00 RON</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Plăcintă cu spanac și brânză</td>
+                            <td>Produse de patiserie sărate</td>
+                            <td data-price="11.00">11.00 RON</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- Sectiune Footer -->
+        <footer class="py-5" id="footerArmine"> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-4 mb-4"> 
+                        <h4 class="footer-titlu">Despre noi</h4> 
+                        <p class="footer-text">Suntem o echipă pasionată de cofetărie și ne străduim să oferim cele mai delicioase și creative deserturi pentru clienții noștri.</p> 
+                    </div>                     
+                    <div class="col-md-4 mb-4"> 
+                        <h4 class="footer-titlu">Contact</h4> 
+                        <p class="footer-text"> 
+                    Str. Exemplu, nr. 42<br> 
+                    București, România<br> 
+                    Tel: +40 712 345 678<br> 
+                    Email: contact@armine-fm.ro </p> 
+                    </div>                     
+                    <div class="col-md-4 mb-4"> 
+                        <h4 class="footer-titlu">Urmărește-ne</h4> 
+                        <ul class="list-inline"> 
+                            <li class="list-inline-item"><a href="#" class="text-footer"><i class="fab fa-facebook-f"></i></a>
+                            </li>                             
+                            <li class="list-inline-item"><a href="#" class="text-footer"><i class="fab fa-instagram"></i></a>
+                            </li>                             
+                            <li class="list-inline-item"><a href="#" class="text-footer"><i class="fab fa-twitter"></i></a>
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+                <div class="row"> 
+                    <div class="col text-center"> 
+                        <p class="footer-text-small">&copy; 2023 Cofetăria Armine FM. Toate drepturile rezervate.</p> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+        <!-- END Sectiune Footer -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Scriptul meu pt navbar-->
+        <script src="navbar-scroll.js"></script>         
+        <script src="assets/js/meniu_produse.js"></script>         
+    </body>
+</html>

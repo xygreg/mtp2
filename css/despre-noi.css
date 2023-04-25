@@ -1,0 +1,87 @@
+/* Stiluri pentru header */
+.despre-noi-header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.despre-noi-header h1 {
+    font-size: 2.8rem;
+
+    /* mărimea fontului pentru titlu */
+    font-weight: bold;
+
+    /* grosimea fontului pentru titlu */
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru secțiunea Introducere */
+.despre-noi-introducere {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.despre-noi-introducere h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru secțiunea Artizan */
+.despre-noi-artizan {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.despre-noi-artizan h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.despre-noi-artizan .rounded-circle {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid #fad0c4;
+}
+
+/* Stiluri pentru secțiunea Produse */
+.despre-noi-produse {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.despre-noi-produse h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* videoclip YouTube */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+
+    /* Raport de aspect 16:9 */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
